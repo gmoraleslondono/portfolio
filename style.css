@@ -1,5 +1,5 @@
 @media only screen and (max-width:620px) {
-    .menu, .main, .right {
+    .main {
       width:100%;
     }
 }
@@ -23,7 +23,7 @@ body {
     cursor: pointer;
     height: 70px;
     float: left;
-    width: 10%;
+    width: 90px;
 }
 
 .up-bar {
@@ -33,7 +33,7 @@ body {
     height: 70px;
     font-size: 15px;
     float: left;
-    width: 90%;
+    width: calc(100% - 90px);
 }
 
 .dropdown-content {
@@ -66,9 +66,9 @@ body {
 }
     
 .main {
-    width: 60%;
+    width: 80%;
     padding: 20px;
-    margin: 0 auto;
+    margin: 100px auto auto auto;
 }
 
 img {
@@ -126,22 +126,43 @@ div.desc {
     .gallery {
         width: 100%;
     }
+    .dropbtn {
+        width: 20%;
+    }
+    .up-bar {
+        width: 80%
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .right {
+        display: none;
+    }
+    .dropbtn {
+        width: 20%;
+    }
+    .up-bar {
+        width: 80%
+    }
 }
 
 .right {
-    float:left;
-    width:40%;
-    margin-top:7px;
-}
-
-.left {
-    position: relative;
-    right: 50px;
     float:right;
-    width:60%;
-    margin-top: 7px;
+    border-radius: 10%;
+    margin-left: 40px;
+    width: 300px;
 }
 
 .justify{
     text-align:justify;
+}
+
+.home-image {
+    width: auto;
+    height: 500px;
+    border-radius: 10%;
+}
+
+.center {
+    text-align: center;
 }
