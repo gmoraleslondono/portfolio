@@ -1,9 +1,3 @@
-@media only screen and (max-width:620px) {
-    .main {
-      width:100%;
-    }
-}
-
 body {
     font-family:Verdana;
     color:black;
@@ -14,6 +8,7 @@ body {
     box-sizing: border-box;
 }
 
+/*header*/
 .dropbtn {
     background-color: yellowgreen;
     color: white;
@@ -66,15 +61,24 @@ body {
     background-color: orange;
 }
 
+/*index*/
+.home-image {
+    width: auto;
+    height: 500px;
+    border-radius: 10%;
+}
+
 .linkMenu {
-    width:100%;
+    width:80%;
     margin: 0 auto;
     display:flex;
     flex-direction: row;
-    padding: 7% 10%;
+    flex: wrap;
+    padding: 5% 0%;
 }
 
 .linkMenuOptions {
+    width: 20%;
     background-color: none;
     text-align: left;
     display: flex;
@@ -84,19 +88,30 @@ body {
 
 .linkOption {
     text-decoration: none;
-    padding: 10%;
     font-size: 20px;
     color: rebeccapurple;
+    padding: 8%;
 }
 
 .linkOption:hover {
     font-size: 22px;
     color: orange;
 }
-    
-.main {
-    width: 60%;
-    margin: 6% 20%;
+
+.mainIndex {
+    width: 80%;
+    padding: 6% 10%;
+}
+
+.mainIndex p{
+    text-align: center;
+}
+
+/*about*/
+.mainAbout {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 8%;
 }
 
 img {
@@ -104,19 +119,6 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 45%;
-}
-
-.link, .link:visited {
-    background-color:yellowgreen;
-    color: white;
-    padding: 14px 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-}
-
-.link:hover, .link:active {
-    background-color: orange;
 }
 
 div.photo {
@@ -132,21 +134,99 @@ div.photo img {
     height: auto;
 }
 
-div.desc {
-    padding: 10px;
-    text-align: center;
-}
-
 .gallery {
     padding: 0 6px;
     float: left;
     width: 25%;
 }
 
+/*curriculum*/
+
+.mainCurriculum {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 10%;
+}
+
+.right {
+    width: 50%;
+}
+
+.rightImg {
+    border-radius: 10%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.left {
+    width: 50%;
+}
+
+.justify{
+    text-align:justify;
+}
+
+center {
+    text-align: center;
+}
+
+/*footer*/
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.bottomFooter {
+    background-color:whitesmoke;
+    text-align:center;
+    padding:10px;
+    margin-top:7px;
+}
+
+.link, .link:visited {
+    background-color:yellowgreen;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.link:hover, .link:active {
+    background-color: orange;
+}
+
+/*mobile view*/
+
+@media only screen and (max-width: 780px) {
+    .right {
+        display: none;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .mainAbout {
+        margin-top: 15%;
+    }
+}
+
 @media only screen and (max-width: 700px) {
     .gallery {
         width: 50%;
         margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width:620px) {
+    .mainAbout {
+      width:100%;
     }
 }
 
@@ -160,37 +240,25 @@ div.desc {
     .up-bar {
         width: 80%
     }
+    .mainAbout {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .linkMenuOptions {
+        width: 30%;
+    }
+    .mainIndex {
+        width: 70%;
+        padding: 5% 0%;
+        padding-left: 10%;
+    }
 }
 
 @media only screen and (max-width: 480px) {
-    .right {
-        display: none;
-    }
     .dropbtn {
         width: 20%;
     }
     .up-bar {
         width: 80%
     }
-}
-
-.right {
-    float:right;
-    border-radius: 10%;
-    margin-left: 40px;
-    width: 300px;
-}
-
-.justify{
-    text-align:justify;
-}
-
-.home-image {
-    width: auto;
-    height: 500px;
-    border-radius: 10%;
-}
-
-.center {
-    text-align: center;
 }
