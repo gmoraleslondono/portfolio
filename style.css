@@ -1,9 +1,3 @@
-@media only screen and (max-width:620px) {
-    .main {
-      width:100%;
-    }
-}
-
 body {
     font-family:Verdana;
     color:black;
@@ -14,6 +8,7 @@ body {
     box-sizing: border-box;
 }
 
+/*header*/
 .dropbtn {
     background-color: yellowgreen;
     color: white;
@@ -66,15 +61,24 @@ body {
     background-color: orange;
 }
 
+/*index*/
+.home-image {
+    width: auto;
+    height: 500px;
+    border-radius: 10%;
+}
+
 .linkMenu {
-    width:100%;
+    width:80%;
     margin: 0 auto;
     display:flex;
     flex-direction: row;
-    padding: 7% 10%;
+    flex: wrap;
+    padding: 5% 0%;
 }
 
 .linkMenuOptions {
+    width: 20%;
     background-color: none;
     text-align: left;
     display: flex;
@@ -84,9 +88,9 @@ body {
 
 .linkOption {
     text-decoration: none;
-    padding: 10%;
     font-size: 20px;
     color: rebeccapurple;
+    padding: 8%;
 }
 
 .linkOption:hover {
@@ -94,9 +98,20 @@ body {
     color: orange;
 }
     
-.main {
-    width: 60%;
-    margin: 6% 20%;
+.mainIndex {
+    width: 80%;
+    padding: 6% 10%;
+}
+
+.mainIndex p{
+    text-align: center;
+}
+
+/*about*/
+.mainAbout {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 8%;
 }
 
 img {
@@ -106,6 +121,57 @@ img {
     width: 45%;
 }
 
+div.photo {
+    border: 1px solid silver;
+}
+
+div.photo:hover {
+    border: 1px solid gray;
+}
+
+div.photo img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery {
+    padding: 0 6px;
+    float: left;
+    width: 25%;
+}
+
+/*curriculum*/
+
+.mainCurriculum {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 10%;
+}
+
+.right {
+    width: 50%;
+}
+
+.rightImg {
+    border-radius: 10%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.left {
+    width: 50%;
+}
+
+.justify{
+    text-align:justify;
+}
+
+center {
+    text-align: center;
+}
 
 /*footer*/
 footer {
