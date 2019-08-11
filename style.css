@@ -97,7 +97,7 @@ body {
     font-size: 22px;
     color: orange;
 }
-    
+
 .mainIndex {
     width: 80%;
     padding: 6% 10%;
@@ -201,34 +201,32 @@ footer {
     background-color: orange;
 }
 
-div.photo {
-    border: 1px solid silver;
-}
+/*mobile view*/
 
-div.photo:hover {
-    border: 1px solid gray;
-}
+@media only screen and (max-width: 780px) {
+    .right {
+        display: none;
+    }
 
-div.photo img {
-    width: 100%;
-    height: auto;
-}
+    .left {
+        width: 100%;
+    }
 
-div.desc {
-    padding: 10px;
-    text-align: center;
-}
-
-.gallery {
-    padding: 0 6px;
-    float: left;
-    width: 25%;
+    .mainAbout {
+        margin-top: 15%;
+    }
 }
 
 @media only screen and (max-width: 700px) {
     .gallery {
         width: 50%;
         margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width:620px) {
+    .mainAbout {
+      width:100%;
     }
 }
 
@@ -242,37 +240,25 @@ div.desc {
     .up-bar {
         width: 80%
     }
+    .mainAbout {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .linkMenuOptions {
+        width: 30%;
+    }
+    .mainIndex {
+        width: 70%;
+        padding: 5% 0%;
+        padding-left: 10%;
+    }
 }
 
 @media only screen and (max-width: 480px) {
-    .right {
-        display: none;
-    }
     .dropbtn {
         width: 20%;
     }
     .up-bar {
         width: 80%
     }
-}
-
-.right {
-    float:right;
-    border-radius: 10%;
-    margin-left: 40px;
-    width: 300px;
-}
-
-.justify{
-    text-align:justify;
-}
-
-.home-image {
-    width: auto;
-    height: 500px;
-    border-radius: 10%;
-}
-
-.center {
-    text-align: center;
 }
