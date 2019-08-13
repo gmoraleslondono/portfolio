@@ -233,6 +233,14 @@ footer {
 }
 
 @media only screen and (max-width: 700px) {
+    .up-bar {
+        padding: 2% 0;
+    }
+
+    .dropdown{
+        padding: 2% 3%;
+    }
+
     .gallery {
         width: 50%;
         margin: 6px 0;
@@ -246,14 +254,16 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
+    .up-bar {
+        padding: 3% 0;
+    }
+
+    .dropdown{
+        padding: 3% 5%;
+    }
+    
     .gallery {
         width: 100%;
-    }
-    .dropbtn {
-        width: 20%;
-    }
-    .up-bar {
-        width: 80%
     }
     .mainAbout {
         width: 80%;
@@ -270,10 +280,6 @@ footer {
 }
 
 @media only screen and (max-width: 480px) {
-    .dropbtn {
-        width: 20%;
-    }
-    .up-bar {
-        width: 80%
-    }
+ 
+
 }
