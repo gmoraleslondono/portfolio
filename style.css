@@ -76,6 +76,10 @@ header {
     background-color: orange;
 }
 
+.dropbtn:focus, .dropbtn:active {
+    outline: none;
+}
+
 /*index*/
 .home-image {
     width: auto;
@@ -126,7 +130,7 @@ header {
 .mainAbout {
     width: 70%;
     margin: 0 auto;
-    margin-top: 8%;
+    margin-top: 3%;
 }
 
 img {
@@ -163,7 +167,7 @@ div.photo img {
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: wrap;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 .right {
@@ -236,7 +240,7 @@ footer {
     }
 
     .mainAbout {
-        margin-top: 15%;
+        margin-top: 5%;
     }
 }
 
