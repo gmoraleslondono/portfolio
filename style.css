@@ -203,6 +203,14 @@ footer {
     margin-top:7px;
 }
 
+.footerLink {
+    text-align:center;
+}
+
+.footerLink a {
+    margin-top: 5px;
+}
+
 .link, .link:visited {
     background-color:yellowgreen;
     color: white;
@@ -244,6 +252,15 @@ footer {
     .gallery {
         width: 50%;
         margin: 6px 0;
+    }
+    .footerAbout {
+        position: inherit;
+    }
+    .footerProjects {
+        position: absolute;
+    }
+    .footerIndex {
+        position:fixed;
     }
 }
 
