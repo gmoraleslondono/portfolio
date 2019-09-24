@@ -489,8 +489,18 @@ footer {
     height: 150px;
     margin-left: 50%;
     margin-top: -40%;
-    animation: none;
+    animation: fly2 5s 2 linear alternate;
+    animation-delay: 2s;
     transform: none;
+  }
+
+  @keyframes fly2 {
+    from {
+      margin-top: -30%;
+    }
+    to {
+      margin-top: -160%;
+    }
   }
 }
 
