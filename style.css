@@ -81,6 +81,11 @@ header {
 }
 
 /*index*/
+.containerIndex {
+  background: linear-gradient(to bottom right, #5433ff, #20bdff, #a5fecb);
+  height: 100vh;
+}
+
 .home-image {
     width: auto;
     height: 500px;
