@@ -408,7 +408,7 @@ footer {
         padding: 2% 0;
     }
 
-    .dropdown{
+  .dropdown {
         padding: 2% 3%;
     }
 
@@ -423,13 +423,17 @@ footer {
         position: absolute;
     }
     .footerIndex {
-        position:fixed;
+    position: fixed;
     }
 }
 
-@media only screen and (max-width:620px) {
+@media only screen and (max-width: 620px) {
     .mainAbout {
-      width:100%;
+    width: 100%;
+  }
+
+  .linkMenu {
+    width: 95%;
     }
 }
 
@@ -438,23 +442,57 @@ footer {
         padding: 3% 0;
     }
 
-    .dropdown{
+  .up-bar h1 {
+    font-size: 20px;
+    padding: 3%;
+  }
+
+  .dropdown {
         padding: 3% 5%;
     }
     
     .gallery {
         width: 100%;
     }
+
     .mainAbout {
         width: 80%;
         margin: 0 auto;
     }
+
+  .linkMenu {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
     .linkMenuOptions {
-        width: 30%;
+    width: 80%;
+  }
+
+  .linkOption {
+    padding: 2%;
+    font-size: 18px;
     }
+
     .mainIndex {
-        width: 70%;
-        padding: 5% 0%;
-        padding-left: 10%;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0%;
+  }
+
+  .box {
+    width: 150px;
+    height: 150px;
+    margin-left: 50%;
+    margin-top: -40%;
+    animation: none;
+    transform: none;
+  }
+}
+
+@media only screen and (max-width: 330px) {
+  body,
+  html {
+    font-size: 16px;
     }
 }
