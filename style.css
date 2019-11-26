@@ -238,7 +238,7 @@ footer {
 
 .link:hover,
 .link:active {
-  background-color: orange;
+  color: orange;
 }
 
 /*animation home*/
