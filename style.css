@@ -199,7 +199,9 @@ div.photo img {
 }
 
 center {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 /*footer*/
@@ -492,6 +494,10 @@ footer {
     animation: fly2 5s 2 linear alternate;
     animation-delay: 2s;
     transform: none;
+  }
+
+  center {
+    flex-direction: column;
   }
 
   @keyframes fly2 {
