@@ -158,88 +158,78 @@
         <div class="container">
           <div class="slide">
             <a
-            href="https://codepen.io/gmoraleslondono/pen/qgmJYd"
-            target="_blank"
+              href="https://codepen.io/gmoraleslondono/pen/qgmJYd"
+              target="_blank"
               ><img src="images/project8.png" />
             </a>
           </div>
-          
+
           <div class="slide">
             <a
-            href="https://codepen.io/gmoraleslondono/pen/YgjWJo"
-            target="_blank"
+              href="https://codepen.io/gmoraleslondono/pen/YgjWJo"
+              target="_blank"
               ><img src="images/project9.png" />
             </a>
           </div>
-          
+
           <div class="slide">
             <a
-            href="https://codepen.io/gmoraleslondono/pen/Odeewo"
-            target="_blank"
+              href="https://codepen.io/gmoraleslondono/pen/Odeewo"
+              target="_blank"
               ><img src="images/project10.png" />
             </a>
           </div>
-          
+
           <div class="slide">
             <a
-            href="https://codepen.io/gmoraleslondono/pen/aXqboq"
-            target="_blank"
+              href="https://codepen.io/gmoraleslondono/pen/aXqboq"
+              target="_blank"
               ><img src="images/project11.png" />
             </a>
           </div>
-          
+
           <div class="slide">
             <a
-            href="https://codepen.io/gmoraleslondono/pen/QoYBYJ"
-            target="_blank"
+              href="https://codepen.io/gmoraleslondono/pen/QoYBYJ"
+              target="_blank"
               ><img src="images/project12.png" />
             </a>
           </div>
-          
+
           <div class="slide">
             <a
-            href="https://codepen.io/gmoraleslondono/pen/wZvzMv"
-            target="_blank"
+              href="https://codepen.io/gmoraleslondono/pen/wZvzMv"
+              target="_blank"
               ><img src="images/project13.png" />
             </a>
           </div>
         </div>
-        
+
         <div class="slideArrows">
-          <a class="prev" onclick="plusSlides(-1)">❮</a>
-          <a class="next" onclick="plusSlides(1)">❯</a>
+          <a class="prev" onclick="handleClickNavigationArrowsLeft()">❮</a>
+          <a class="next" onclick="handleClickNavigationArrowsRight()">❯</a>
         </div>
 
         <div class="slideArrows-mobile">
-          <div class="moveLeft" style="background-color: transparent;width: 30%; height: 100%;position: absolute;" onclick="plusSlides(-1)"></div>
-          <div class="moveRight" style="background-color: transparent;width: 30%; height: 100%;position: absolute; right: 0;" onclick="plusSlides(1)"></div>
+          <div
+            class="moveLeft"
+            style="background-color: transparent;width: 30%; height: 100%;position: absolute;"
+            onclick="handleClickNavigationArrowsLeft()"
+          ></div>
+          <div
+            class="moveRight"
+            style="background-color: transparent;width: 30%; height: 100%;position: absolute; right: 0;"
+            onclick="handleClickNavigationArrowsRight()"
+          ></div>
         </div>
 
         <div class="dotsRow">
-          <div
-            class="dot"
-            onclick="currentSlide(1)"
-          ></div>
-          <div
-            class="dot"
-            onclick="currentSlide(2)"
-          ></div>
-          <div
-            class="dot"
-            onclick="currentSlide(3)"
-          ></div>
-          <div
-            class="dot"
-            onclick="currentSlide(4)"
-          ></div>
-          <div
-            class="dot"
-            onclick="currentSlide(5)"
-          ></div>
-          <div
-            class="dot"
-            onclick="currentSlide(6)"
-          ></div>
+          <div class="dot" onclick="handleClickNavigationDot(1)"></div>
+          <div class="dot" onclick="handleClickNavigationDot(2)"></div>
+          <div class="dot" onclick="handleClickNavigationDot(3)"></div>
+          <div class="dot" onclick="handleClickNavigationDot(4)"></div>
+          <div class="dot" onclick="handleClickNavigationDot(5)"></div>
+          <div class="dot" onclick="handleClickNavigationDot(6)"></div>
         </div>
       </div>
     </div>
@@ -279,30 +269,46 @@
   </body>
 
   <script>
-    //initial state
-    var slideIndex = 1;
-    showSlides(slideIndex);
+    var INITIAL_SLIDE_INDEX = 1;
+    var AUTOMATIC_NAVIGATION_INTERVAL = 5e3;
 
-    //when using arrows left and right
-    function plusSlides(n) {
-      showSlides((slideIndex += n));
+    var currentSlideIndex;
+
+    function init() {
+      updateCarousel(INITIAL_SLIDE_INDEX);
+      enableAutomaticNavigation();
     }
 
-    //when clicking
-    function currentSlide(n) {
-      showSlides((slideIndex = n));
+    function enableAutomaticNavigation() {
+      setInterval(function() {
+        updateCarousel(++currentSlideIndex);
+      }, AUTOMATIC_NAVIGATION_INTERVAL);
     }
 
-    function showSlides(n) {
+    function handleClickNavigationArrowsLeft() {
+      updateCarousel(--currentSlideIndex);
+    }
+
+    function handleClickNavigationArrowsRight() {
+      updateCarousel(++currentSlideIndex);
+    }
+
+    function handleClickNavigationDot(nextSlideIndex) {
+      updateCarousel(nextSlideIndex);
+    }
+
+    function updateCarousel(nextSlideIndex) {
+      currentSlideIndex = nextSlideIndex;
+
       var i;
       var slides = document.getElementsByClassName("slide");
       var dots = document.getElementsByClassName("dot");
 
-      if (n > slides.length) {
-        slideIndex = 1;
+      if (nextSlideIndex > slides.length) {
+        currentSlideIndex = 1;
       }
-      if (n < 1) {
-        slideIndex = slides.length;
+      if (nextSlideIndex < 1) {
+        currentSlideIndex = slides.length;
       }
       for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
@@ -310,8 +316,10 @@
       for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
       }
-      slides[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " active";
+      slides[currentSlideIndex - 1].style.display = "block";
+      dots[currentSlideIndex - 1].className += " active";
     }
+
+    init();
   </script>
 </html>
