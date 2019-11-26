@@ -17,26 +17,29 @@
     <title>Gloria Morales</title>
 
     <style>
-      img {
+      .slide img {
         vertical-align: middle;
+        width:auto;
+        max-height:400px;
       }
 
-      /* Position the image container (needed to position the left and right arrows) */
-      .container {
+      .container-background {
         position: relative;
-        width: 80%;
-        margin: 0 auto;
+        width: 100%;
+        height: 500px;
         margin-bottom: 20px;
+        background-color: darkblue;
+      }
+
+      .container {
+        position: absolute;
+        width: 100%;
+        top: 5%;
       }
 
       /* Hide the images by default */
-      .mySlides {
+      .slide {
         display: none;
-      }
-
-      /* Add a pointer when hovering over the thumbnail images */
-      .cursor {
-        cursor: pointer;
       }
 
       /* Next & previous buttons */
@@ -44,12 +47,12 @@
       .next {
         cursor: pointer;
         position: absolute;
-        top: 40%;
+        top: 45%;
+        margin: 0 50px;
         width: auto;
-        margin-top: -50px;
         color: yellowgreen;
         font-weight: bold;
-        font-size: 35px;
+        font-size: 45px;
         border-radius: 0 3px 3px 0;
         user-select: none;
         -webkit-user-select: none;
@@ -58,7 +61,6 @@
       /* Position the "next button" to the right */
       .next {
         right: 0;
-        border-radius: 3px 0 0 3px;
       }
 
       /* On hover */
@@ -67,36 +69,28 @@
         color: orange;
       }
 
-      /* Container for image text */
-      .caption-container {
-        text-align: center;
-        padding: 1px 16px;
-        color: black;
-        margin: 10px 0;
-        font-size: 25px;
-        font-weight: bold;
+      .dotsRow {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        position: absolute;
+        bottom: 10px;
+        justify-content: center;
       }
 
-      .row:after {
-        content: "";
-        display: table;
-        clear: both;
-      }
-
-      /* Six columns side by side */
-      .column {
-        float: left;
-        width: 16.66%;
-      }
-
-      /* Add a transparency effect for thumnbail images */
-      .demo {
-        opacity: 0.6;
+      .dot {
+        width: 10px;
+        height: 10px;
+        border: 1px solid white;
+        border-radius: 50%;
+        background-color: transparent;
+        cursor: pointer;
+        margin: 0 5px;
       }
 
       .active,
-      .demo:hover {
-        opacity: 1;
+      .dot:hover {
+        background-color: white;
       }
 
       footer {
@@ -104,22 +98,22 @@
       }
 
       @media only screen and (max-width: 500px) {
-        .row {
-          display: none;
-        }
         footer {
           position: absolute;
         }
-        .mySlides img {
-          width: 80%;
-        }
-        .caption-container {
-          margin: 0;
-          color: orange;
-          background-color: white;
+        .container-background {
+          height: 240px;
         }
         .container {
-          width: 90%;
+          width: 100%;
+        }
+        .slide img {
+          width: auto;
+          max-height: 195px;
+          max-width: 300px;
+        }
+        .slideArrows {
+          display: none;
         }
       }
     </style>
@@ -152,117 +146,92 @@
 
       <h2 style="text-align:left; margin-left:10%;">My Projects</h2>
 
-      <div class="container">
-        <div class="mySlides">
-          <a
+      <div class="container-background">
+        <div class="container">
+          <div class="slide">
+            <a
             href="https://codepen.io/gmoraleslondono/pen/qgmJYd"
             target="_blank"
-            ><img src="images/project8.png" style="width:40%"
-          /></a>
-        </div>
-
-        <div class="mySlides">
-          <a
+            ><img src="images/project8.png"/>
+            </a>
+          </div>
+          
+          <div class="slide">
+            <a
             href="https://codepen.io/gmoraleslondono/pen/YgjWJo"
             target="_blank"
-            ><img src="images/project9.png"" style="width:28%"></a
-          >
-        </div>
-
-        <div class="mySlides">
-          <a
+            ><img src="images/project9.png">
+            </a>
+          </div>
+          
+          <div class="slide">
+            <a
             href="https://codepen.io/gmoraleslondono/pen/Odeewo"
             target="_blank"
-            ><img src="images/project10.png" style="width:43%"
-          /></a>
-        </div>
-
-        <div class="mySlides">
-          <a
+            ><img src="images/project10.png"/>
+            </a>
+          </div>
+          
+          <div class="slide">
+            <a
             href="https://codepen.io/gmoraleslondono/pen/aXqboq"
             target="_blank"
-            ><img src="images/project11.png" style="width:52%"
-          /></a>
-        </div>
-
-        <div class="mySlides">
-          <a
+            ><img src="images/project11.png"/>
+            </a>
+          </div>
+          
+          <div class="slide">
+            <a
             href="https://codepen.io/gmoraleslondono/pen/QoYBYJ"
             target="_blank"
-            ><img src="images/project12.png" style="width:46%"
-          /></a>
-        </div>
-
-        <div class="mySlides">
-          <a
+            ><img src="images/project12.png"/>
+            </a>
+          </div>
+          
+          <div class="slide">
+            <a
             href="https://codepen.io/gmoraleslondono/pen/wZvzMv"
             target="_blank"
-            ><img src="images/project13.png" style="width:43%"
-          /></a>
+            ><img src="images/project13.png"/>
+            </a>
+          </div>
+        </div>
+        
+        <div class="slideArrows">
+          <a class="prev" onclick="plusSlides(-1)">❮</a>
+          <a class="next" onclick="plusSlides(1)">❯</a>
         </div>
 
-        <a class="prev" onclick="plusSlides(-1)">❮</a>
-        <a class="next" onclick="plusSlides(1)">❯</a>
-
-        <div class="caption-container">
-          <p id="caption"></p>
+        <div class="slideArrows-mobile">
+          <div class="moveLeft" style="background-color: transparent;width: 30%; height: 100%;position: absolute;" onclick="plusSlides(-1)"></div>
+          <div class="moveRight" style="background-color: transparent;width: 30%; height: 100%;position: absolute; right: 0;" onclick="plusSlides(1)"></div>
         </div>
 
-        <div class="row">
-          <div class="column">
-            <img
-              class="demo cursor"
-              src="images/project8.png"
-              style="width:100%"
-              onclick="currentSlide(1)"
-              alt="Survey page"
-            />
-          </div>
-          <div class="column">
-            <img
-              class="demo cursor"
-              src="images/project9.png"
-              style="width:75%"
-              onclick="currentSlide(2)"
-              alt="Super hero only CSS"
-            />
-          </div>
-          <div class="column">
-            <img
-              class="demo cursor"
-              src="images/project10.png"
-              style="width:100%"
-              onclick="currentSlide(3)"
-              alt="Insult generator"
-            />
-          </div>
-          <div class="column">
-            <img
-              class="demo cursor"
-              src="images/project11.png"
-              style="width:100%"
-              onclick="currentSlide(4)"
-              alt="Documentation page"
-            />
-          </div>
-          <div class="column">
-            <img
-              class="demo cursor"
-              src="images/project12.png"
-              style="width:100%"
-              onclick="currentSlide(5)"
-              alt="Login/Singup doble view"
-            />
-          </div>
-          <div class="column">
-            <img
-              class="demo cursor"
-              src="images/project13.png"
-              style="width:100%"
-              onclick="currentSlide(6)"
-              alt="Unicorn only CSS"
-            />
-          </div>
+        <div class="dotsRow">
+          <div
+            class="dot"
+            onclick="currentSlide(1)"
+          ></div>
+          <div
+            class="dot"
+            onclick="currentSlide(2)"
+          ></div>
+          <div
+            class="dot"
+            onclick="currentSlide(3)"
+          ></div>
+          <div
+            class="dot"
+            onclick="currentSlide(4)"
+          ></div>
+          <div
+            class="dot"
+            onclick="currentSlide(5)"
+          ></div>
+          <div
+            class="dot"
+            onclick="currentSlide(6)"
+          ></div>
         </div>
       </div>
     </div>
@@ -302,22 +271,25 @@
   </body>
 
   <script>
+    //initial state
     var slideIndex = 1;
     showSlides(slideIndex);
 
+    //when using arrows left and right
     function plusSlides(n) {
       showSlides((slideIndex += n));
     }
 
+    //when clicking
     function currentSlide(n) {
       showSlides((slideIndex = n));
     }
 
     function showSlides(n) {
       var i;
-      var slides = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("demo");
-      var captionText = document.getElementById("caption");
+      var slides = document.getElementsByClassName("slide");
+      var dots = document.getElementsByClassName("dot");
+
       if (n > slides.length) {
         slideIndex = 1;
       }
@@ -332,7 +304,6 @@
       }
       slides[slideIndex - 1].style.display = "block";
       dots[slideIndex - 1].className += " active";
-      captionText.innerHTML = dots[slideIndex - 1].alt;
     }
   </script>
 </html>
