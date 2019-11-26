@@ -227,12 +227,12 @@ footer {
 
 .link,
 .link:visited {
-  background-color: #5433ff;
-  color: white;
-  padding: 14px 25px;
+  color: #5433ff;
   text-align: center;
   text-decoration: none;
   display: inline-block;
+  font-size: 30px;
+  margin: 0 5px;
 }
 
 .link:hover,
