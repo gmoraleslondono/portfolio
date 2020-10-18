@@ -644,6 +644,10 @@ footer {
 }
 
 @media only screen and (max-width: 620px) {
+  .linkMenuOptions {
+    display: none;
+  }
+
   .mainAbout {
     width: 100%;
   }
