@@ -352,6 +352,214 @@ footer {
   animation: move1 2s infinite;
 }
 
+.me {
+  width: 20%;
+}
+
+.box-me {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 5%;
+  width: 300px;
+  height: 350px;
+}
+
+.hair {
+  position: absolute;
+  width: 60%;
+  height: 70%;
+  background: black;
+  border-top-right-radius: 40%;
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+
+  left: 17.5%;
+  top: 10%;
+}
+
+.head-me {
+  position: absolute;
+  width: 80%;
+  height: 70%;
+  background: #e89a86;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
+  border-bottom-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+  left: 10%;
+  top: 10%;
+}
+
+.mouth {
+  position: absolute;
+  width: 50%;
+  height: 20%;
+  background: #a3350a;
+  top: 70%;
+  left: 25%;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.tongue {
+  position: absolute;
+  width: 35%;
+  height: 35%;
+  background: red;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  z-index: 1;
+  left: 33%;
+  top: 64%;
+}
+
+.teeth {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  background: white;
+  top: -10%;
+  left: 0%;
+  z-index: 2;
+}
+
+.nose {
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  background: #e1836b;
+  z-index: 4;
+  left: 45%;
+  top: 35%;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.glasses {
+  position: absolute;
+  width: 100%;
+  height: 33%;
+  z-index: 3;
+  top: 23%;
+}
+
+.glass-left {
+  position: absolute;
+  width: 45%;
+  height: 100%;
+  background: #0099ff;
+  border-radius: 15px;
+}
+
+.glass-left-copy {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background: #e89a86;
+  border-radius: 15px;
+  left: 10%;
+  top: 10%;
+}
+
+.eye-left {
+  position: absolute;
+  width: 20%;
+  height: 40%;
+  background: black;
+  left: 60%;
+  top: 35%;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.glass-left-copy2 {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background: white;
+  border-radius: 15px;
+  left: 10%;
+  top: 10%;
+}
+
+.glass-right {
+  position: absolute;
+  width: 45%;
+  height: 100%;
+  background: #0099ff;
+  border-radius: 15px;
+  right: 0;
+}
+
+.glass-right-copy {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background: #e89a86;
+  border-radius: 15px;
+  left: 10%;
+  top: 10%;
+}
+
+.eye-right {
+  position: absolute;
+  width: 20%;
+  height: 40%;
+  background: black;
+  right: 60%;
+  top: 35%;
+  border-radius: 10px;
+  z-index: 2;
+  animation: blink 2.5s infinite;
+}
+
+.glass-right-copy2 {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background: white;
+  border-radius: 15px;
+  right: 10%;
+  top: 10%;
+}
+
+.union {
+  position: absolute;
+  width: 10%;
+  height: 15%;
+  background: black;
+  top: 35%;
+  left: 45%;
+}
+
+.union-copy {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: 1;
+}
+.fringe1 {
+  position: absolute;
+  width: 20%;
+  height: 30%;
+  background: black;
+  border-radius: 30%;
+  transform: rotate(45deg);
+  left: 40%;
+}
+.fringe2 {
+  position: absolute;
+  width: 20%;
+  height: 30%;
+  background: black;
+  border-radius: 30%;
+  transform: rotate(45deg);
+  left: 20%;
+}
+
 @keyframes move1 {
   0% {
     height: 50%;
