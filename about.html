@@ -1,91 +1,104 @@
 <!DOCTYPE html>
-
 <html>
+  <head>
+    <meta name="description" content="Gloria's Portfolio">
+    <meta name="keywords" content="Gloria Morales, portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
 
-    <head>
-        <meta name="description" content="Gloria's Portfolio">
-        <meta name="keywords" content="Gloria Morales, portfolio">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
 
-        <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/v4-shims.css">
 
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/v4-shims.css">
+    <title>Gloria Morales</title>
+  </head>
 
-        <title>Gloria Morales</title>
-    </head>
-    
-    <body>
-        <div style="overflow:auto">
-            <header>
-                <div class="dropdown">
-                    <button class="dropbtn"><i class="material-icons" style="font-size:35px;">menu</i></button>
-                        <div class="dropdown-content">
-                            <a href="index.html">Home</a>
-                            <a href="about.html">About me</a>
-                            <a href="curriculum.html">Curriculum</a>
-                            <a href="projects.html">Projects</a>
-                        </div>
-                </div>
-                <div class="up-bar">
-                    <h1><a href="index.html" style="text-decoration:none;color: white;">Gloria Morales</a></h1>
-                </div>
-            </header>        
-                    
-            <div class="mainAbout">
-                <h2>About me</h2>
-                <div class="justify">      
-                <p>I was born in Colombia on December 1988. I had the fortune to grow up in the tranquility of the countryside in a large and lovely family. I studied Industrial Engineering in Colombia and I got my degree in 2013. I am a self-taught developer learning new things every day. Currently, I am happily married and I am living in Sweden with my husband.</p>
-                <p>In my spare time, I like drawing using CSS, also I use to go to the gym, enjoy dancing and doing exercises that require concentration. I love great food and explore new flavors. I appreciate sharing moments with my friends and family.
-                Traveling, hiking and discovering new places are my favorite hobbies.</p>
-                </div>
-            </div>
+  <body>
+    <div style="overflow:auto">
+      <div class="header-desktop">
+        <a href="index.html" class="logo">Gloria Morales</a>
+        <div class="header-right">
+          <a href="index.html">Home</a>
+          <a href="about.html">About me</a>
+          <a href="curriculum.html">Curriculum</a>
+          <a href="projects.html">Projects</a>
+        </div>
+      </div>
+      <div class="header-mobile">
+        <div class="dropdown">
+          <button class="dropbtn">
+            <i class="material-icons" style="font-size: 35px"> menu </i>
+          </button>
+          <div class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="about.html">About me</a>
+            <a href="curriculum.html">Curriculum</a>
+            <a href="projects.html">Projects</a>
+          </div>
+        </div>
+        <div class="up-bar">
+          <h1>Gloria Morales</h1>
+        </div>
+      </div>
 
-            <center>
-                <div class="gallery">
-                    <div class="photo">
-                        <a target="_blank" href="images/image3.jpg">
-                        <img src="images/image3.jpg" alt="California." width="300">
-                        </a>
-                        <!-- <div class="desc">Hiking in San Francisco, California.</div> -->
-                    </div>
-                </div>
+      <div class="mainAbout">
+        <h2>About me</h2>
+        <div class="justify">
+          <p>I was born in Colombia on December 1988. I had the fortune to grow up in the tranquility of the countryside
+            in a large and lovely family. I studied Industrial Engineering in Colombia and I got my degree in 2013. I am a
+            self-taught developer learning new things every day. Currently, I am happily married and I am living in Sweden
+            with my husband.</p>
+          <p>In my spare time, I like drawing using CSS, also I use to go to the gym, enjoy dancing and doing exercises
+            that require concentration. I love great food and explore new flavors. I appreciate sharing moments with my
+            friends and family.
+            Traveling, hiking and discovering new places are my favorite hobbies.</p>
+        </div>
+      </div>
 
-                <div class="gallery">
-                    <div class="photo">
-                        <a target="_blank" href="images/image4.jpg">
-                        <img src="images/image4.jpg" alt="Stockholm" width="300">
-                        </a>
-                        <!-- <div class="desc">Hiking in Stockholm, Sweden.</div> -->
-                    </div>
-                </div>
-
-                <div class="gallery">
-                        <div class="photo">
-                            <a target="_blank" href="images/image5.jpg">
-                            <img src="images/image5.jpg" alt="Mariefred Suecia" width="300">
-                            </a>
-                            <!-- <div class="desc">Canoeing at Mariefred, Sweden.</div> -->
-                        </div>
-                    </div>     
-                </div>            
-            </center>
+      <div class="center">
+        <div class="gallery">
+          <div class="photo">
+            <a target="_blank" href="images/image3.jpg">
+              <img src="images/image3.jpg" alt="California." width="300">
+            </a>
+            <!-- <div class="desc">Hiking in San Francisco, California.</div> -->
+          </div>
         </div>
 
-        <footer class="footerAbout">
-            <div class="footerLink">
-                <a class="link" href="https://github.com/gmoraleslondono" target="_blank"><i class="fab fa-github-square"></i></a>
-                <a class="link" href="https://www.linkedin.com/in/gmoraleslondono" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a class="link" href="https://codepen.io/gmoraleslondono" target="_blank"><i class="fab fa-codepen"></i></a>
-                <a class="link" href="https://twitter.com/gmoraleslondono" target="_blank"><i class="fab fa-twitter-square"></i></a>
-            </div>
-    
-            <div class="bottomFooter">© 2019 by Gloria Morales. All Rights Reserved.</div>
-        </footer>
+        <div class="gallery">
+          <div class="photo">
+            <a target="_blank" href="images/image4.jpg">
+              <img src="images/image4.jpg" alt="Stockholm" width="300">
+            </a>
+            <!-- <div class="desc">Hiking in Stockholm, Sweden.</div> -->
+          </div>
+        </div>
 
-    </body>
+        <div class="gallery">
+          <div class="photo">
+            <a target="_blank" href="images/image5.jpg">
+              <img src="images/image5.jpg" alt="Mariefred Suecia" width="300">
+            </a>
+            <!-- <div class="desc">Canoeing at Mariefred, Sweden.</div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
 
+    <div class="bottomFooter">
+      <div class="footerLink">
+        <a class="link" href="https://github.com/gmoraleslondono" target="_blank"><i class="fab fa-github-square"></i></a>
+        <a class="link" href="https://www.linkedin.com/in/gmoraleslondono" target="_blank"><i
+            class="fab fa-linkedin"></i></a>
+        <a class="link" href="https://codepen.io/gmoraleslondono" target="_blank"><i class="fab fa-codepen"></i></a>
+        <a class="link" href="https://twitter.com/gmoraleslondono" target="_blank"><i
+            class="fab fa-twitter-square"></i></a>
+      </div>
+      Copyright @ 2020. With ❤️ by Gloria Morales 👩‍🏭
+    </div>
+  </body>
 </html>

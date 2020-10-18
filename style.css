@@ -9,11 +9,46 @@ body {
 }
 
 /*header*/
-header {
+.header-desktop {
+  overflow: hidden;
+  background-color: #121212;
+  padding: 20px 10px;
+}
+
+.header-desktop a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header-desktop a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header-desktop a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header-right {
+  float: right;
+}
+
+.header-mobile {
   width: 100%;
   top: 0;
   display: flex;
   flex-direction: row;
+}
+
+.header-mobile {
+  display: none;
 }
 
 .up-bar {
@@ -94,7 +129,7 @@ header {
   border-radius: 10%;
 }
 
-.linkMenu {
+.container-content {
   width: 80%;
   margin: 0 auto;
   display: flex;
@@ -126,8 +161,8 @@ header {
 }
 
 .mainIndex {
-  width: 80%;
-  padding: 6% 10%;
+  width: 50%;
+  margin: 5%;
 }
 
 .mainIndex p {
@@ -197,10 +232,11 @@ div.photo img {
   text-align: justify;
 }
 
-center {
+.center {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 5% 0;
 }
 
 /*footer*/
@@ -243,6 +279,7 @@ footer {
 
 /*animation home*/
 .box {
+  position: fixed;
   width: 200px;
   height: 200px;
   margin-left: 80%;
@@ -351,6 +388,214 @@ footer {
   animation: move1 2s infinite;
 }
 
+.me {
+  width: 20%;
+}
+
+.box-me {
+  position: relative;
+  margin: auto;
+  display: block;
+  margin-top: 5%;
+  width: 300px;
+  height: 350px;
+}
+
+.hair {
+  position: absolute;
+  width: 60%;
+  height: 70%;
+  background: black;
+  border-top-right-radius: 40%;
+  border-top-left-radius: 40%;
+  border-bottom-left-radius: 15%;
+  border-bottom-right-radius: 15%;
+
+  left: 17.5%;
+  top: 10%;
+}
+
+.head-me {
+  position: absolute;
+  width: 80%;
+  height: 70%;
+  background: #e89a86;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 40%;
+  border-bottom-right-radius: 30%;
+  border-bottom-left-radius: 30%;
+  left: 10%;
+  top: 10%;
+}
+
+.mouth {
+  position: absolute;
+  width: 50%;
+  height: 20%;
+  background: #a3350a;
+  top: 70%;
+  left: 25%;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.tongue {
+  position: absolute;
+  width: 35%;
+  height: 35%;
+  background: red;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  z-index: 1;
+  left: 33%;
+  top: 64%;
+}
+
+.teeth {
+  position: absolute;
+  width: 100%;
+  height: 40%;
+  background: white;
+  top: -10%;
+  left: 0%;
+  z-index: 2;
+}
+
+.nose {
+  position: absolute;
+  width: 10%;
+  height: 20%;
+  background: #e1836b;
+  z-index: 4;
+  left: 45%;
+  top: 35%;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.glasses {
+  position: absolute;
+  width: 100%;
+  height: 33%;
+  z-index: 3;
+  top: 23%;
+}
+
+.glass-left {
+  position: absolute;
+  width: 45%;
+  height: 100%;
+  background: #0099ff;
+  border-radius: 15px;
+}
+
+.glass-left-copy {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background: #e89a86;
+  border-radius: 15px;
+  left: 10%;
+  top: 10%;
+}
+
+.eye-left {
+  position: absolute;
+  width: 20%;
+  height: 40%;
+  background: black;
+  left: 60%;
+  top: 35%;
+  border-radius: 10px;
+  z-index: 2;
+}
+
+.glass-left-copy2 {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background: white;
+  border-radius: 15px;
+  left: 10%;
+  top: 10%;
+}
+
+.glass-right {
+  position: absolute;
+  width: 45%;
+  height: 100%;
+  background: #0099ff;
+  border-radius: 15px;
+  right: 0;
+}
+
+.glass-right-copy {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background: #e89a86;
+  border-radius: 15px;
+  left: 10%;
+  top: 10%;
+}
+
+.eye-right {
+  position: absolute;
+  width: 20%;
+  height: 40%;
+  background: black;
+  right: 60%;
+  top: 35%;
+  border-radius: 10px;
+  z-index: 2;
+  animation: blink 2.5s infinite;
+}
+
+.glass-right-copy2 {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background: white;
+  border-radius: 15px;
+  right: 10%;
+  top: 10%;
+}
+
+.union {
+  position: absolute;
+  width: 10%;
+  height: 15%;
+  background: black;
+  top: 35%;
+  left: 45%;
+}
+
+.union-copy {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: 1;
+}
+.fringe1 {
+  position: absolute;
+  width: 20%;
+  height: 30%;
+  background: black;
+  border-radius: 30%;
+  transform: rotate(45deg);
+  left: 40%;
+}
+.fringe2 {
+  position: absolute;
+  width: 20%;
+  height: 30%;
+  background: black;
+  border-radius: 30%;
+  transform: rotate(45deg);
+  left: 20%;
+}
+
 @keyframes move1 {
   0% {
     height: 50%;
@@ -422,27 +667,41 @@ footer {
     margin: 6px 0;
   }
   .footerAbout {
-    position: inherit;
+    position: fixed;
   }
   .footerProjects {
     position: absolute;
   }
   .footerIndex {
     position: fixed;
+    font-size: 0.8rem;
+    z-index: 999;
   }
 }
 
 @media only screen and (max-width: 620px) {
+  .linkMenuOptions {
+    display: none;
+  }
+
   .mainAbout {
     width: 100%;
   }
 
-  .linkMenu {
+  .container-content {
     width: 95%;
   }
 }
 
 @media only screen and (max-width: 500px) {
+  .header-desktop {
+    display: none;
+  }
+
+  .header-mobile {
+    display: inline-flex;
+  }
+
   .up-bar {
     padding: 3% 0;
   }
@@ -465,9 +724,8 @@ footer {
     margin: 0 auto;
   }
 
-  .linkMenu {
-    display: flex;
-    flex-direction: column-reverse;
+  .container-content {
+    flex-direction: column;
   }
 
   .linkMenuOptions {
@@ -486,26 +744,24 @@ footer {
   }
 
   .box {
-    width: 150px;
-    height: 150px;
-    margin-left: 50%;
-    margin-top: -40%;
-    animation: fly2 5s 2 linear alternate;
-    animation-delay: 2s;
-    transform: none;
+    display: none;
   }
 
-  center {
+  .me {
+    width: 100%;
+    margin-bottom: 10%;
+  }
+
+  .box-me {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 250px;
+  }
+
+  .center {
     flex-direction: column;
-  }
-
-  @keyframes fly2 {
-    from {
-      margin-top: -30%;
-    }
-    to {
-      margin-top: -160%;
-    }
+    margin: 0;
   }
 }
 
