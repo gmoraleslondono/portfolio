@@ -696,25 +696,18 @@ footer {
   }
 
   .box {
-    width: 150px;
-    height: 150px;
-    margin-left: 50%;
-    margin-top: -40%;
-    animation: fly2 5s 2 linear alternate;
-    animation-delay: 2s;
-    transform: none;
+    display: none;
   }
 
-  center {
-    flex-direction: column;
+  .me {
+    width: 100%;
   }
 
-  @keyframes fly2 {
-    from {
-      margin-top: -30%;
-    }
-    to {
-      margin-top: -160%;
+  .box-me {
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 250px;
     }
 
   .center {
