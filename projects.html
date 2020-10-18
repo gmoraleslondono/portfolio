@@ -101,14 +101,22 @@
         background-color: white;
       }
 
-      footer {
-        position: unset;
+      .moveLeft {
+        background-color: transparent;
+        width: 30%;
+        height: 100%;
+        position: absolute;
       }
 
-      @media only screen and (max-width: 700px) {
-        footer {
+      .moveRight {
+        background-color: transparent;
+        width: 30%;
+        height: 100%;
           position: absolute;
+        right: 0;
         }
+
+      @media only screen and (max-width: 700px) {
         .container-background {
           height: 240px;
         }
@@ -213,12 +221,10 @@
         <div class="slideArrows-mobile">
           <div
             class="moveLeft"
-            style="background-color: transparent;width: 30%; height: 100%;position: absolute;"
             onclick="handleClickNavigationArrowsLeft()"
           ></div>
           <div
             class="moveRight"
-            style="background-color: transparent;width: 30%; height: 100%;position: absolute; right: 0;"
             onclick="handleClickNavigationArrowsRight()"
           ></div>
         </div>
@@ -277,7 +283,7 @@
     }
 
     function enableAutomaticNavigation() {
-      setInterval(function() {
+      setInterval(function () {
         updateCarousel(++currentSlideIndex);
       }, AUTOMATIC_NAVIGATION_INTERVAL);
     }
