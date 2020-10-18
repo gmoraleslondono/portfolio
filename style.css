@@ -94,7 +94,7 @@ header {
   border-radius: 10%;
 }
 
-.linkMenu {
+.container-content {
   width: 80%;
   margin: 0 auto;
   display: flex;
@@ -126,8 +126,8 @@ header {
 }
 
 .mainIndex {
-  width: 80%;
-  padding: 6% 10%;
+  width: 50%;
+  margin: 5%;
 }
 
 .mainIndex p {
@@ -244,6 +244,7 @@ footer {
 
 /*animation home*/
 .box {
+  position: fixed;
   width: 200px;
   height: 200px;
   margin-left: 80%;
@@ -647,7 +648,7 @@ footer {
     width: 100%;
   }
 
-  .linkMenu {
+  .container-content {
     width: 95%;
   }
 }
@@ -675,9 +676,8 @@ footer {
     margin: 0 auto;
   }
 
-  .linkMenu {
-    display: flex;
-    flex-direction: column-reverse;
+  .container-content {
+    flex-direction: column;
   }
 
   .linkMenuOptions {
@@ -708,7 +708,7 @@ footer {
     display: block;
     width: 200px;
     height: 250px;
-    }
+  }
 
   .center {
     flex-direction: column;
