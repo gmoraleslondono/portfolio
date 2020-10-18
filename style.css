@@ -631,13 +631,14 @@ footer {
     margin: 6px 0;
   }
   .footerAbout {
-    position: inherit;
+    position: fixed;
   }
   .footerProjects {
     position: absolute;
   }
   .footerIndex {
     position: fixed;
+    font-size: 0.8rem;
   }
 }
 
