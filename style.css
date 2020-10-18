@@ -197,10 +197,11 @@ div.photo img {
   text-align: justify;
 }
 
-center {
+.center {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin: 5% 0;
 }
 
 /*footer*/
@@ -506,6 +507,10 @@ footer {
     to {
       margin-top: -160%;
     }
+
+  .center {
+    flex-direction: column;
+    margin: 0;
   }
 }
 
