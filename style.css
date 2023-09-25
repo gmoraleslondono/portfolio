@@ -248,10 +248,13 @@ footer {
 }
 
 .bottomFooter {
-  background-color: whitesmoke;
   text-align: center;
   padding: 10px;
   margin-top: 7px;
+}
+
+.bottomFooter-bg {
+  background-color: whitesmoke;
 }
 
 .footerLink {
