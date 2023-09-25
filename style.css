@@ -31,13 +31,13 @@ body {
   font-weight: bold;
 }
 
-.header-desktop a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
 .header-right {
   float: right;
+}
+
+.header-desktop .header-right a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
 .header-mobile {
