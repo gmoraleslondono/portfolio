@@ -1,331 +1,111 @@
-<!DOCTYPE html>
-
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <meta name="description" content="Gloria's Portfolio" />
-    <meta name="keywords" content="Gloria Morales, portfolio" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
-
-    <link rel="stylesheet" type="text/css" href="style.css" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects — Gloria Morales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.11.2/css/v4-shims.css"
-    />
-
-    <title>Gloria Morales</title>
-
-    <style>
-      .slide img {
-        vertical-align: middle;
-        width: auto;
-        max-height: 400px;
-      }
-
-      .container-background {
-        position: relative;
-        width: 100%;
-        height: 500px;
-        margin-bottom: 20px;
-        background-color: #5433ff;
-      }
-
-      .container {
-        position: absolute;
-        width: 100%;
-        top: 5%;
-      }
-
-      /* Hide the images by default */
-      .slide {
-        display: none;
-      }
-
-      /* Next & previous buttons */
-      .prev,
-      .next {
-        cursor: pointer;
-        position: absolute;
-        top: 45%;
-        margin: 0 50px;
-        width: auto;
-        color: white;
-        font-weight: bold;
-        font-size: 45px;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-        -webkit-user-select: none;
-      }
-
-      /* Position the "next button" to the right */
-      .next {
-        right: 0;
-      }
-
-      /* On hover */
-      .prev:hover,
-      .next:hover {
-        color: orange;
-      }
-
-      .dotsRow {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        position: absolute;
-        bottom: 10px;
-        justify-content: center;
-      }
-
-      .dot {
-        width: 10px;
-        height: 10px;
-        border: 1px solid white;
-        border-radius: 50%;
-        background-color: transparent;
-        cursor: pointer;
-        margin: 0 5px;
-      }
-
-      .active,
-      .dot:hover {
-        background-color: white;
-      }
-
-      .moveLeft {
-        background-color: transparent;
-        width: 30%;
-        height: 100%;
-        position: absolute;
-      }
-
-      .moveRight {
-        background-color: transparent;
-        width: 30%;
-        height: 100%;
-        position: absolute;
-        right: 0;
-      }
-
-      @media only screen and (max-width: 700px) {
-        .container-background {
-          height: 240px;
-        }
-        .container {
-          width: 100%;
-        }
-        .slide img {
-          width: auto;
-          max-height: 195px;
-          max-width: 300px;
-        }
-        .slideArrows {
-          display: none;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <div>
-      <div class="header-desktop">
-        <a href="index.html" class="logo">Gloria Morales</a>
-        <div class="header-right">
-          <a href="index.html">Home</a>
-          <a href="about.html">About me</a>
-          <a href="curriculum.html">Curriculum</a>
-          <a href="projects.html">Projects</a>
-        </div>
+    <nav class="nav">
+      <div class="brand"><span class="brand-dot"></span>Gloria Morales</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="curriculum.html">Curriculum</a>
+        <a href="projects.html" class="active">Projects</a>
       </div>
-      <div class="header-mobile">
-        <div class="dropdown">
-          <button class="dropbtn">
-            <i class="material-icons" style="font-size: 35px"> menu </i>
-          </button>
-          <div class="dropdown-content">
-            <a href="index.html">Home</a>
-            <a href="about.html">About me</a>
-            <a href="curriculum.html">Curriculum</a>
-            <a href="projects.html">Projects</a>
-          </div>
-        </div>
-        <div class="up-bar">
-          <h1>Gloria Morales</h1>
-        </div>
+    </nav>
+
+    <section class="page">
+      <div class="proj-head">
+        <h2>My Projects</h2>
+        <p>
+          Small experiments and pens — mostly about shapes, animation and CSS
+          tricks.
+        </p>
       </div>
-
-      <h2 style="text-align: left; margin-left: 10%">My Projects</h2>
-
-      <div class="container-background">
-        <div class="container">
-          <div class="slide">
-            <a
-              href="https://codepen.io/gmoraleslondono/pen/qgmJYd"
-              target="_blank"
-              ><img src="images/project8.png" />
-            </a>
+      <div class="proj-grid">
+        <a
+          class="proj-card"
+          href="https://codepen.io/gmoraleslondono/pen/qgmJYd"
+          target="_blank"
+        >
+          <img src="images/project8.png" alt="Project" />
+          <div class="pc-foot">
+            <span>CodePen</span><span class="go">View ↗</span>
           </div>
-
-          <div class="slide">
-            <a
-              href="https://codepen.io/gmoraleslondono/pen/YgjWJo"
-              target="_blank"
-              ><img src="images/project9.png" />
-            </a>
+        </a>
+        <a
+          class="proj-card"
+          href="https://codepen.io/gmoraleslondono/pen/YgjWJo"
+          target="_blank"
+        >
+          <img src="images/project9.png" alt="Project" />
+          <div class="pc-foot">
+            <span>CodePen</span><span class="go">View ↗</span>
           </div>
-
-          <div class="slide">
-            <a
-              href="https://codepen.io/gmoraleslondono/pen/Odeewo"
-              target="_blank"
-              ><img src="images/project10.png" />
-            </a>
+        </a>
+        <a
+          class="proj-card"
+          href="https://codepen.io/gmoraleslondono/pen/Odeewo"
+          target="_blank"
+        >
+          <img src="images/project10.png" alt="Project" />
+          <div class="pc-foot">
+            <span>CodePen</span><span class="go">View ↗</span>
           </div>
-
-          <div class="slide">
-            <a
-              href="https://codepen.io/gmoraleslondono/pen/aXqboq"
-              target="_blank"
-              ><img src="images/project11.png" />
-            </a>
+        </a>
+        <a
+          class="proj-card"
+          href="https://codepen.io/gmoraleslondono/pen/aXqboq"
+          target="_blank"
+        >
+          <img src="images/project11.png" alt="Project" />
+          <div class="pc-foot">
+            <span>CodePen</span><span class="go">View ↗</span>
           </div>
-
-          <div class="slide">
-            <a
-              href="https://codepen.io/gmoraleslondono/pen/QoYBYJ"
-              target="_blank"
-              ><img src="images/project12.png" />
-            </a>
+        </a>
+        <a
+          class="proj-card"
+          href="https://codepen.io/gmoraleslondono/pen/QoYBYJ"
+          target="_blank"
+        >
+          <img src="images/project12.png" alt="Project" />
+          <div class="pc-foot">
+            <span>CodePen</span><span class="go">View ↗</span>
           </div>
-
-          <div class="slide">
-            <a
-              href="https://codepen.io/gmoraleslondono/pen/wZvzMv"
-              target="_blank"
-              ><img src="images/project13.png" />
-            </a>
+        </a>
+        <a
+          class="proj-card"
+          href="https://codepen.io/gmoraleslondono/pen/wZvzMv"
+          target="_blank"
+        >
+          <img src="images/project13.png" alt="Project" />
+          <div class="pc-foot">
+            <span>CodePen</span><span class="go">View ↗</span>
           </div>
-        </div>
-
-        <div class="slideArrows">
-          <a class="prev" onclick="handleClickNavigationArrowsLeft()">❮</a>
-          <a class="next" onclick="handleClickNavigationArrowsRight()">❯</a>
-        </div>
-
-        <div class="slideArrows-mobile">
-          <div
-            class="moveLeft"
-            onclick="handleClickNavigationArrowsLeft()"
-          ></div>
-          <div
-            class="moveRight"
-            onclick="handleClickNavigationArrowsRight()"
-          ></div>
-        </div>
-
-        <div class="dotsRow">
-          <div class="dot" onclick="handleClickNavigationDot(1)"></div>
-          <div class="dot" onclick="handleClickNavigationDot(2)"></div>
-          <div class="dot" onclick="handleClickNavigationDot(3)"></div>
-          <div class="dot" onclick="handleClickNavigationDot(4)"></div>
-          <div class="dot" onclick="handleClickNavigationDot(5)"></div>
-          <div class="dot" onclick="handleClickNavigationDot(6)"></div>
-        </div>
+        </a>
       </div>
-    </div>
+    </section>
 
-    <div class="bottomFooter bottomFooter-bg">
-      <div class="footerLink">
-        <a
-          class="link"
-          href="https://github.com/gmoraleslondono"
-          target="_blank"
-          ><i class="fab fa-github-square"></i
-        ></a>
-        <a
-          class="link"
-          href="https://www.linkedin.com/in/gmoraleslondono"
-          target="_blank"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-        <a
-          class="link"
-          href="https://codepen.io/gmoraleslondono"
-          target="_blank"
-          ><i class="fab fa-codepen"></i
-        ></a>
-        <a
-          class="link"
-          href="https://twitter.com/gmoraleslondono"
-          target="_blank"
-          ><i class="fab fa-twitter-square"></i
-        ></a>
+    <footer>
+      <div class="social">
+        <a href="https://github.com/gmoraleslondono" target="_blank">github</a>
+        <a href="https://www.linkedin.com/in/gmoraleslondono" target="_blank"
+          >linkedin</a
+        >
+        <a href="https://codepen.io/gmoraleslondono" target="_blank">codepen</a>
+        <a href="https://twitter.com/gmoraleslondono" target="_blank"
+          >twitter</a
+        >
       </div>
-      Copyright @ 2025. With ❤️ by Gloria Morales 👩‍🏭
-    </div>
+      <div class="copy">© 2026. With ❤️ by Gloria Morales 👩‍💻</div>
+    </footer>
   </body>
-
-  <script>
-    var INITIAL_SLIDE_INDEX = 1;
-    var AUTOMATIC_NAVIGATION_INTERVAL = 5e3;
-
-    var currentSlideIndex;
-
-    function init() {
-      updateCarousel(INITIAL_SLIDE_INDEX);
-      enableAutomaticNavigation();
-    }
-
-    function enableAutomaticNavigation() {
-      setInterval(function () {
-        updateCarousel(++currentSlideIndex);
-      }, AUTOMATIC_NAVIGATION_INTERVAL);
-    }
-
-    function handleClickNavigationArrowsLeft() {
-      updateCarousel(--currentSlideIndex);
-    }
-
-    function handleClickNavigationArrowsRight() {
-      updateCarousel(++currentSlideIndex);
-    }
-
-    function handleClickNavigationDot(nextSlideIndex) {
-      updateCarousel(nextSlideIndex);
-    }
-
-    function updateCarousel(nextSlideIndex) {
-      currentSlideIndex = nextSlideIndex;
-
-      var i;
-      var slides = document.getElementsByClassName("slide");
-      var dots = document.getElementsByClassName("dot");
-
-      if (nextSlideIndex > slides.length) {
-        currentSlideIndex = 1;
-      }
-      if (nextSlideIndex < 1) {
-        currentSlideIndex = slides.length;
-      }
-      for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-      }
-      slides[currentSlideIndex - 1].style.display = "block";
-      dots[currentSlideIndex - 1].className += " active";
-    }
-
-    init();
-  </script>
 </html>

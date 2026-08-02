@@ -1,209 +1,182 @@
-<!DOCTYPE html>
-
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <meta name="description" content="Gloria's Portfolio" />
-    <meta name="keywords" content="Gloria Morales, portfolio" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="UTF-8" />
-
-    <link rel="stylesheet" type="text/css" href="style.css" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curriculum — Gloria Morales</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.11.2/css/all.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.11.2/css/v4-shims.css"
-    />
-
-    <title>Gloria Morales</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <div>
-      <div class="header-desktop">
-        <a href="index.html" class="logo">Gloria Morales</a>
-        <div class="header-right">
-          <a href="index.html">Home</a>
-          <a href="about.html">About me</a>
-          <a href="curriculum.html">Curriculum</a>
-          <a href="projects.html">Projects</a>
-        </div>
+    <nav class="nav">
+      <div class="brand"><span class="brand-dot"></span>Gloria Morales</div>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="curriculum.html" class="active">Curriculum</a>
+        <a href="projects.html">Projects</a>
       </div>
-      <div class="header-mobile">
-        <div class="dropdown">
-          <button class="dropbtn">
-            <i class="material-icons" style="font-size: 35px"> menu </i>
-          </button>
-          <div class="dropdown-content">
-            <a href="index.html">Home</a>
-            <a href="about.html">About me</a>
-            <a href="curriculum.html">Curriculum</a>
-            <a href="projects.html">Projects</a>
-          </div>
-        </div>
-        <div class="up-bar">
-          <h1>Gloria Morales</h1>
-        </div>
-      </div>
+    </nav>
 
-      <div class="mainCurriculum">
-        <div class="right">
-          <img class="rightImg" src="images/image1.jpg" alt="Image" />
-        </div>
-
-        <div class="left">
-          <h2>Curriculum</h2>
-          <p>
-            <b>Gloria Cecilia Morales Londoño</b> <br />
-            <b>Software Developer &<br />
-            Industrial Engineer</b> <br />
+    <section class="page">
+      <div class="cv-head">
+        <img src="images/image.jpg" alt="Gloria Morales" />
+        <div>
+          <h2>Gloria Cecilia Morales Londoño</h2>
+          <div class="role">Software Developer &amp; Industrial Engineer</div>
+          <div class="cv-links">
             <a href="https://github.com/gmoraleslondono" target="_blank"
               >github.com/gmoraleslondono</a
             >
-            <br />
             <a
               href="https://www.linkedin.com/in/gmoraleslondono"
               target="_blank"
               >linkedin.com/in/gmoraleslondono</a
-            ><br />
+            >
             <a href="mailto:gmoraleslondono@gmail.com"
               >gmoraleslondono@gmail.com</a
             >
-          </p>
-
-          <h3>Profile</h3>
-
-          <p class="justify">
-            I am a self-taught Software Developer in Stockholm, Sweden. I have
-            experience building websites, web applications and mobile
-            applications. Enjoy learning, creating and solving problems. My
-            challenge is to try to learn something new every day.
-            <br />
-            I have a creative mind, great attention to detail, and others qualities such as
-             collaboration and teamwork.
-          </p>
-
-          <h3>Skills</h3>
-
-          <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Vue.js</li>
-            <li>Nuxt.js</li>
-            <li>React</li>
-            <li>WordPress</li>
-            <li>Boostrap</li>
-            <li>JQuery</li>
-            <li>SASS</li>
-            <li>Git</li>
-            <li>Node</li>
-            <li>Express</li>
-            <li>MongoDB</li>
-            <li>Postgress</li>
-            <li>RestAPIs</li>
-          </ul>
-
-          <h3>Education</h3>
-          <ul>
-            <li>
-              <b>Industrial Engineer</b><br />Universidad Tecnológica de Pereira,
-              Colombia.<br />December 2012.
-            </li>
-            <li>
-              <b>Software Development Java and Media Applications</b><br />KTH
-              University, Sweden.<br />December 2018.
-            </li>
-            <li><b>Intro to JavaScript</b><br>Udacity, 2018.</li>
-            <li>
-              <b>Backend Developer</b><br />Sundsgårdens folkhögskola, Helsingborg.
-              <br />January 2025.
-            </li>
-          </ul>
-
-          <h3>Lenguage</h3>
-
-          <ul>
-            <li>Spanish: Native.</li>
-            <li>English: Fluent.</li>
-            <li>Swedish: Basic.</li>
-          </ul>
+          </div>
         </div>
       </div>
 
-      <div style="width: 70%; margin: 0 auto">
+      <div class="cv-section">
+        <h3>Profile</h3>
+        <p>
+          I am a self-taught Software Developer in Stockholm, Sweden, with
+          experience building websites, web apps and mobile apps. I enjoy
+          learning, creating and solving problems — my challenge is to try to
+          learn something new every day. I have a creative mind, great attention
+          to detail, and I value collaboration and teamwork.
+        </p>
+      </div>
+
+      <div class="cv-section">
+        <h3>Skills</h3>
+        <div class="skills-wrap">
+          <span class="skill-tag">HTML</span><span class="skill-tag">CSS</span
+          ><span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">Vue.js</span
+          ><span class="skill-tag">Nuxt.js</span
+          ><span class="skill-tag">React</span>
+          <span class="skill-tag">WordPress</span
+          ><span class="skill-tag">Bootstrap</span
+          ><span class="skill-tag">jQuery</span>
+          <span class="skill-tag">SASS</span><span class="skill-tag">Git</span
+          ><span class="skill-tag">Node</span>
+          <span class="skill-tag">Express</span
+          ><span class="skill-tag">MongoDB</span
+          ><span class="skill-tag">PostgreSQL</span>
+          <span class="skill-tag">REST APIs</span>
+        </div>
+      </div>
+
+      <div class="cv-section">
         <h3>Experience</h3>
-
-        <ul>
-          <li>
-            <b>Frontend Developer</b><br />August 2021 – January 2025<br />Happy Socks AB,
-            Sweden.<br />
-            <p class="justify">
-              The assignments included designing, building, and maintaining component-based web 
-              applications, with a strong focus on performance, usability, and accessibility. 
-              Main tools used Vue.js, Nuxt.js, TypeScript, Storyblok, Vercel, etc.
-            </p>
-          </li>
-          <br />
-          <li>
-            <b>Frontend Developer</b><br />April 2019 – August 2021<br />Greater Than AB,
-            Sweden.<br />
-            <p class="justify">
-              Developing, mantaining and modifying websites, computer and mobile
-              applications. Creating pixel perfect responsive web pages and
-              applications. Integrating data from back-end services. Testing web
-              pages and applications to find and solve bugs.
-            </p>
-          </li>
-          <br />
-          <li>
-            <b>Inventory Control Assistant</b><br />October 2015 – January 2017<br />Cooperativa
-            Nacional de Droguistas Coopidrogas, Colombia.<br />
-            <p class="justify">
-              Documenting daily inventory, maintaining stock rotation and
-              expiration dates, monitoring processes and documents, registering
-              database of purchases, statistic analysis.
-            </p>
-          </li>
-        </ul>
+        <div class="timeline">
+          <div class="t-item">
+            <div class="t-date">Aug 2021 — Jan 2025</div>
+            <div class="t-role">Frontend Developer</div>
+            <div class="t-org">Happy Socks AB, Sweden</div>
+            <div class="t-desc">
+              Designed, built and maintained component-based web applications,
+              with a strong focus on performance, usability and accessibility.
+              Main tools: Vue.js, Nuxt.js, TypeScript, Storyblok, Vercel.
+            </div>
+          </div>
+          <div class="t-item">
+            <div class="t-date">Apr 2019 — Aug 2021</div>
+            <div class="t-role">Frontend Developer</div>
+            <div class="t-org">Greater Than AB, Sweden</div>
+            <div class="t-desc">
+              Developed, maintained and modified websites and mobile
+              applications. Built pixel-perfect responsive pages, integrated
+              back-end services, and tested applications to find and fix bugs.
+            </div>
+          </div>
+          <div class="t-item">
+            <div class="t-date">Oct 2015 — Jan 2017</div>
+            <div class="t-role">Inventory Control Assistant</div>
+            <div class="t-org">Coopidrogas, Colombia</div>
+            <div class="t-desc">
+              Documented daily inventory, maintained stock rotation and
+              expiration dates, monitored processes, registered purchase
+              records, and ran statistical analysis.
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
 
-    <div class="bottomFooter bottomFooter-bg">
-      <div class="footerLink">
-        <a
-          class="link"
-          href="https://github.com/gmoraleslondono"
-          target="_blank"
-          ><i class="fab fa-github-square"></i
-        ></a>
-        <a
-          class="link"
-          href="https://www.linkedin.com/in/gmoraleslondono"
-          target="_blank"
-          ><i class="fab fa-linkedin"></i
-        ></a>
-        <a
-          class="link"
-          href="https://codepen.io/gmoraleslondono"
-          target="_blank"
-          ><i class="fab fa-codepen"></i
-        ></a>
-        <a
-          class="link"
-          href="https://twitter.com/gmoraleslondono"
-          target="_blank"
-          ><i class="fab fa-twitter-square"></i
-        ></a>
+      <div class="cv-section">
+        <h3>Education</h3>
+        <div class="timeline">
+          <div class="t-item">
+            <div class="t-date">Jan 2025</div>
+            <div class="t-role">Backend Developer</div>
+            <div class="t-org">Sundsgårdens folkhögskola, Helsingborg</div>
+          </div>
+          <div class="t-item">
+            <div class="t-date">Dec 2018</div>
+            <div class="t-role">
+              Software Development, Java &amp; Media Applications
+            </div>
+            <div class="t-org">KTH University, Sweden</div>
+          </div>
+          <div class="t-item">
+            <div class="t-date">Dec 2012</div>
+            <div class="t-role">Industrial Engineer</div>
+            <div class="t-org">
+              Universidad Tecnológica de Pereira, Colombia
+            </div>
+          </div>
+        </div>
       </div>
-      Copyright @ 2025. With ❤️ by Gloria Morales 👩‍🏭
-    </div>
+
+      <div class="cv-section" style="border-bottom: none">
+        <h3>Language</h3>
+        <div class="lang-row">
+          <div class="lang-item">
+            <div class="name">Spanish — Native</div>
+            <div class="dots">
+              <span class="on"></span><span class="on"></span
+              ><span class="on"></span><span class="on"></span
+              ><span class="on"></span>
+            </div>
+          </div>
+          <div class="lang-item">
+            <div class="name">English — Fluent</div>
+            <div class="dots">
+              <span class="on"></span><span class="on"></span
+              ><span class="on"></span><span class="on"></span><span></span>
+            </div>
+          </div>
+          <div class="lang-item">
+            <div class="name">Swedish — Basic</div>
+            <div class="dots">
+              <span class="on"></span><span class="on"></span><span></span
+              ><span></span><span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="social">
+        <a href="https://github.com/gmoraleslondono" target="_blank">github</a>
+        <a href="https://www.linkedin.com/in/gmoraleslondono" target="_blank"
+          >linkedin</a
+        >
+        <a href="https://codepen.io/gmoraleslondono" target="_blank">codepen</a>
+        <a href="https://twitter.com/gmoraleslondono" target="_blank"
+          >twitter</a
+        >
+      </div>
+      <div class="copy">© 2026. With ❤️ by Gloria Morales 👩‍💻</div>
+    </footer>
   </body>
 </html>
